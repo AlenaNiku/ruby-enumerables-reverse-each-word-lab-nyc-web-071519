@@ -1,6 +1,8 @@
 def reverse_each_word(string)
-  my_array = "Hello there, and how are you?".split
-  str = " "
-  my_array.reverse {|word| str += "#{word}"}
-  p str
+  my_array = string.split(" ")
+  return_array = []
+  my_array.each do |string|
+    return_array << string.reverse
+  end
+  return_array.join(" ")
 end
